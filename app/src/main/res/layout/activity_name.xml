@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+
+    tools:context=".NameActivity">
+    <TextView
+        android:id="@+id/leaf1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100px"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="@color/teal_200"
+        android:lineHeight="36px"
+        android:text="Leaf Disease Detection"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27px"
+        android:layout_marginTop="52dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="246px"
+        android:text="Enter Your Name:"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leaf1"
+        />
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toLeftOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background"
+        android:hint="eg:John Cena"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/ed"
+        app:layout_constraintTop_toBottomOf="@id/ed"
+        app:layout_constraintRight_toRightOf="@id/ed"
+        android:layout_marginTop="40dp"
+        android:text="Start"
+
+        android:textAllCaps="false"
+        android:backgroundTint="@drawable/background"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
