@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/image"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/leaf"
         android:layout_width="match_parent"
@@ -18,14 +19,13 @@
         android:text="Leaf Disease Detection"
         android:gravity="center_horizontal"
         android:textSize="24sp"
-
         android:textColor="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/start_btn"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
@@ -33,7 +33,6 @@
         android:layout_marginTop="678px"
         android:layout_marginRight="82px"
         android:layout_marginBottom="63px"
-        android:backgroundTint="@drawable/background"
         android:text="Get Started"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
