@@ -38,7 +38,7 @@
         android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -50,16 +50,17 @@
             android:layout_width="wrap_content"
             android:textColor="#FF0000"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="28sp"
+            android:layout_marginLeft="25dp"
+            android:textSize="25sp"
             android:text="Label:" />
 <TextView
+    android:id="@+id/label"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="John Doe"
     android:textColor="@color/black"
-    android:textSize="28sp"
-    android:layout_marginLeft="50dp"/>
+    android:textSize="25sp"
+    android:layout_marginLeft="30dp"/>
 
     </LinearLayout>
 
@@ -77,18 +78,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:text="Confidency:"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="Confidence:"
             android:textColor="#FF0000"
-            android:textSize="28sp" />
+            android:textSize="25sp" />
 
         <TextView
+            android:id="@+id/confidency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
             android:text="John Doe"
             android:textColor="@color/black"
-            android:textSize="28sp" />
+            android:textSize="25sp" />
 
     </LinearLayout>
 
